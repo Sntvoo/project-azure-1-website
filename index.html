@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Azure 1</title>
+    <meta name="description" content="Project Azure 1 - All-in-one suite combining gaming security, networking, AI chat, and more in a polished Windows app.">
+    <style>
+        /* Reset and base styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: rgba(0, 0, 0, 0.95);
+            color: #b0b0b0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Semi-transparent dark overlay feel */
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 3rem;
+            background: linear-gradient(to bottom, rgba(20, 20, 30, 0.9), transparent);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            color: #d0d0d0;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Download button - prominent, red accent, animated */
+        .download-btn {
+            display: inline-block;
+            background: #c42b1c;
+            color: white;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0.8rem;
+            box-shadow: 0 8px 20px rgba(196, 43, 28, 0.4);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .download-btn:hover {
+            background: #e6392a;
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(196, 43, 28, 0.6);
+            border-color: #ff4d3b;
+        }
+
+        .download-btn:active {
+            transform: translateY(2px);
+        }
+
+        /* Features section */
+        .features {
+            margin: 4rem 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(30, 30, 40, 0.7);
+            padding: 1.8rem;
+            border-radius: 0.8rem;
+            border: 1px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #c42b1c;
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(196, 43, 28, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #c42b1c;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Gallery */
+        .gallery {
+            margin: 5rem 0 3rem;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-img {
+            width: 100%;
+            border-radius: 0.8rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+            transition: all 0.4s ease;
+            border: 2px solid #444;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 40px rgba(196, 43, 28, 0.4);
+            border-color: #c42b1c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            .download-btn { font-size: 1.4rem; padding: 1rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Azure 1</h1>
+        <p class="tagline">An all-in-one suite combining gaming security, networking tools, unrestricted Gemini AI chat, and more — all wrapped in a beautiful, polished graphical UI.</p>
+        <a href="downloads/Project-Azure-1.zip" download class="download-btn">
+            Download Project Azure 1 (x64)
+        </a>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
+            Includes .exe + all required DLLs • Built with Visual Studio 2022
+        </p>
+    </header>
+
+    <main>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Gemini AI</h3>
+                    <p>Full access to Gemini 2.5 Flash model — chat freely about anything. Most safety restrictions removed (except illegal/harmful topics like bomb-making or extreme explicit content).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>WHOIS Suite</h3>
+                    <p>Custom-built WHOIS tool: enter any domain and get full details instantly in the integrated command-line interface.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>The Vault</h3>
+                    <p>Encrypt/decrypt any file with AES-256. Set custom passwords and manage files directly in-app.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Intelligence Links</h3>
+                    <p>One-click access to VirusTotal, HaveIBeenPwned, Shodan, and more — opens in your default browser.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Game Server Status</h3>
+                    <p>Live Rainbow Six Siege server status across all platforms, with raw HTML view and direct source link.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Gaming Hub</h3>
+                    <p>Latest headlines from PC Gamer, IGN, Kotaku, and GameSpot — organized in tabs, click to read full articles.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>System Defence</h3>
+                    <p>Enhanced Task Manager: view processes, detect suspicious activity, and monitor priority levels.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Network Scanning</h3>
+                    <p>Full port scanning, ICMP ping/traceroute, and network diagnostics — all built-in.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Screenshots</h2>
+            <div class="image-grid">
+                <img src="images/azure(2).png" alt="Gemini AI chat feature" class="gallery-img">
+                <img src="images/azure(3).png" alt="WHOIS suite in action" class="gallery-img">
+                <img src="images/azure(4).png" alt="The Vault encryption tool" class="gallery-img">
+                <img src="images/azure(5).png" alt="Game server status for Rainbow Six Siege" class="gallery-img">
+                <img src="images/azure(6).png" alt="Gaming news hub" class="gallery-img">
+                <img src="images/azure(7).png" alt="System defence process monitor" class="gallery-img">
+                <img src="images/azure(8).png" alt="Network scanning tools" class="gallery-img">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Project Azure 1
+    </footer>
+</body>
+</html>
